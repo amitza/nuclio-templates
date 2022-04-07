@@ -1,0 +1,16 @@
+metadata:
+  name: zafran
+spec:
+  build:
+    functionSourceCode: {{ .SourceCode }}
+  description: "Just a test of the function market"
+  env:
+    - name: JUST_A_KEY
+      value: {{ .JustAKey }}
+  handler: "main:handler"
+  runtime: "python:3.6"
+  minReplicas: 1
+  maxReplicas: 2
+  triggers:
+    myHttpTrigger:
+      kind: http

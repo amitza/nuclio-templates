@@ -1,0 +1,8 @@
+JustAKey:
+  displayName: Just a key
+  kind: choice
+  description: "What do to with the incoming request body???"
+  required: true
+  attributes:
+    choices: [choice1, choice2, choice3]
+    defaultValue: choice1
